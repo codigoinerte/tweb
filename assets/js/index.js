@@ -1,10 +1,9 @@
 // import { initialApp } from './app.js';
 // import { procesA, procesB, procesC } from './home.js';
+const { config: { version } } = await import(`./base.js?v=${Date.now()}`);
 
-const version = '?v=1.0.4';
-
-const { initialApp } = await import(`./app.js${version}`);
-const { procesA, procesB, procesC } = await import(`./home.js${version}`);
+const { initialApp } = await import(`./app.js?v=${version}`);
+const { procesA, procesB, procesC } = await import(`./home.js?v=${version}`);
 
 initialApp();
 

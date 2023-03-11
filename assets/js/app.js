@@ -1,7 +1,7 @@
 const version = '?v=1.0.3';
 
 // import { config } from './base.js';
-const { config } = await import(`./base.js${version}`);
+const { config } = await import(`./base.js?v=${Date.now()}`);
 
 export const app = true;
 

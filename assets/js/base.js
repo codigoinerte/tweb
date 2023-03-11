@@ -1,5 +1,5 @@
 const base = 'base';
-const version = '1.0.1';
+const version = '1.0.5';
 
 export const config = {
     base,

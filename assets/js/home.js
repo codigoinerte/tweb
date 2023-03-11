@@ -4,7 +4,7 @@ const procesA =(id='', n=6)=>{
     const getContent = document.getElementById(id);
     for(let x = 1; x < n; x++){
         getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary bg-warning">
-        style ${x}
+        Axss ${x}
         </button></div>`);
     }
 }
