@@ -3,7 +3,9 @@ const procesA =(id='', n=6)=>{
 
     const getContent = document.getElementById(id);
     for(let x = 1; x < n; x++){
-        getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary bg-warning">-${x}-</button></div>`);
+        getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary bg-warning">
+        style ${x}
+        </button></div>`);
     }
 }
 const procesB =(id='', n=12)=>{
@@ -11,7 +13,9 @@ const procesB =(id='', n=12)=>{
 
     const getContent = document.getElementById(id);
     for(let x = 1; x < n; x++){
-        getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary">*${x}*</button></div>`);
+        getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary">
+        name ${x}
+        </button></div>`);
     }
 }
 const procesC =(id='', n=8)=>{
@@ -20,7 +24,9 @@ const procesC =(id='', n=8)=>{
     const getContent = document.getElementById(id);
     for(let x = 1; x < n; x++){
 
-        getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary">${x}</button></div>`);
+        getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary">
+        file ${x}
+        </button></div>`);
     }
 }
 
