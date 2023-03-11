@@ -11,7 +11,7 @@ const procesB =(id='', n=12)=>{
 
     const getContent = document.getElementById(id);
     for(let x = 1; x < n; x++){
-        getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary">${x}</button></div>`);
+        getContent.insertAdjacentHTML('beforeend', `<div class="col p-0"><button class="btn rounded-0 w-100 btn-primary">*${x}*</button></div>`);
     }
 }
 const procesC =(id='', n=8)=>{
